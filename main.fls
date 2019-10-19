@@ -1,10 +1,10 @@
-PWD /run/media/werner/Loot/Google Drive/Documents/CV Latex
+PWD /home/werner/Documents/CV Latex
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.tex
-OUTPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.log
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncv.cls
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncv.cls
+INPUT /home/werner/Documents/CV Latex/main.tex
+OUTPUT /home/werner/Documents/CV Latex/main.log
+INPUT /home/werner/Documents/CV Latex/moderncv.cls
+INPUT /home/werner/Documents/CV Latex/moderncv.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/tex/latex/base/size12.clo
 INPUT /usr/share/texmf-dist/fonts/map/fontname/texfonts.map
@@ -41,8 +41,8 @@ INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT /usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/tweaklist.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/tweaklist.sty
+INPUT /home/werner/Documents/CV Latex/tweaklist.sty
+INPUT /home/werner/Documents/CV Latex/tweaklist.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -73,21 +73,21 @@ INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 INPUT /usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncvcompatibility.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncvcompatibility.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/collection.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/collection.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncvstyleclassic.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncvstyleclassic.sty
+INPUT /home/werner/Documents/CV Latex/moderncvcompatibility.sty
+INPUT /home/werner/Documents/CV Latex/moderncvcompatibility.sty
+INPUT /home/werner/Documents/CV Latex/collection.sty
+INPUT /home/werner/Documents/CV Latex/collection.sty
+INPUT /home/werner/Documents/CV Latex/moderncvstyleclassic.sty
+INPUT /home/werner/Documents/CV Latex/moderncvstyleclassic.sty
 INPUT /usr/share/texmf-dist/tex/latex/lm/lmodern.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncviconsmarvosym.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncviconsmarvosym.sty
+INPUT /home/werner/Documents/CV Latex/moderncviconsmarvosym.sty
+INPUT /home/werner/Documents/CV Latex/moderncviconsmarvosym.sty
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/tex/latex/marvosym/umvs.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/marvosym/umvs.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncvcolorblack.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/moderncvcolorblack.sty
+INPUT /home/werner/Documents/CV Latex/moderncvcolorblack.sty
+INPUT /home/werner/Documents/CV Latex/moderncvcolorblack.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/share/texmf-dist/tex/latex/geometry/geometry.sty
@@ -139,9 +139,9 @@ INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.aux
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.aux
-OUTPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.aux
+INPUT /home/werner/Documents/CV Latex/main.aux
+INPUT /home/werner/Documents/CV Latex/main.aux
+OUTPUT /home/werner/Documents/CV Latex/main.aux
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
@@ -162,14 +162,14 @@ INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-OUTPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.pdf
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-OUTPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.out
+OUTPUT /home/werner/Documents/CV Latex/main.pdf
+INPUT /home/werner/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.out
+OUTPUT /home/werner/Documents/CV Latex/main.out
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -190,9 +190,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmsy6.tfm
 INPUT /usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/share/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/roundselfportrait.jpg
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/roundselfportrait.jpg
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/roundselfportrait.jpg
+INPUT /home/werner/Documents/CV Latex/roundselfportrait.jpg
+INPUT /home/werner/Documents/CV Latex/roundselfportrait.jpg
+INPUT /home/werner/Documents/CV Latex/roundselfportrait.jpg
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss17.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso17.tfm
@@ -209,9 +209,9 @@ INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-mvs.cfg
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmsso10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/ec-lmss8.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.aux
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
-INPUT /run/media/werner/Loot/Google Drive/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.aux
+INPUT /home/werner/Documents/CV Latex/main.out
+INPUT /home/werner/Documents/CV Latex/main.out
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb
