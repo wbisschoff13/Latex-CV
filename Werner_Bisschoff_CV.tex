@@ -8,6 +8,12 @@
 
 \documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
+
+\usepackage[T1,OT1]{fontenc}
+\usepackage[notmath]{sansmathfonts}
+\newcommand{\MATLAB}{\textsc{Matlab}}
+\newcommand{\cpp}{C\texttt{++}}
+\newcommand{\csharp}{C\texttt{\#}}
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -27,7 +33,7 @@
 
 % personal data
 \name{Werner}{Bisschoff}
-\title{Computer and Electronic Engineering Student}                               % optional, remove / comment the line if not wanted
+\title{Computer and Electronic Engineering Graduate}                               % optional, remove / comment the line if not wanted
 %\address{15 Storm Street}{Potchefstroom}{5130}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
@@ -54,59 +60,67 @@
 \makecvtitle
 
 \section{Profile}
-\cvitem{Personal}{I am a quiet, yet serious person that is dependable and persevering. I continuously strive for improvement and efficiency. I am a critical thinker and a problem solver. My hobbies include photography, playing guitar and ukulele, some online gaming.}
-\cvitem{Career}{My goal to work in software development position and to constantly improve myself and my workflow. I do not have much previous work experience but I am quick and willing to adapt, learn and improve. I aim to deliver thorough, detailed work with patience and determination.}
+\cvitem{Personal}{
+    I am a quiet, yet serious person that is dependable and persevering. I continuously strive for improvement and efficiency. I am a critical thinker and a problem solver. My hobbies include photography, playing the ukulele, and casual online gaming
+}
+\cvitem{Career}{
+    My goal is to work in a software development position and to constantly improve myself and my workflow. I am a fast learner and always willing to adapt, learn and improve. I aim to deliver thorough, detailed work with patience and determination. I believe in good communication and mutual respect in the workplace.
+}
 
 \section{Education}
 \cventry{Feb 2015 -- Dec 2019}{B.Eng. Computer and Electronic Engineering}{North-West University}{Potchefstroom}{\textit{66\%}}{
     \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-    \item Learned how to work well in multi-disciplinary teams
-    \item Learned how to manage deadlines and multitudes of workloads
-    \item Learned when to just be satisfied with \emph{good enough} while still trying to improve
-    \item Learned how to put together a concise report that looks good using \LaTeX
-    \item Utilised object oriented programming to create a tower defense game using Qt C++, including pathfinding and network communication.
-    \item Performed data analysis on large spreadsheets by use of Python, Julia and Jupyter Notebook.
-    \item Worked on an Android app to communicate between two devices using NFC and encryption.
-    \item Learned about embedded systems, I/O and interrupts using an ARM microcontroller.
-    \item Used an Arduino to implement a PID controller.
-    \item Created a web site similar to that of \emph{Sakai}, where multiple users could be created and assignments could be tracked and uploaded, using PHP, HTML, MySQL and Bootstrap. Hashing was used to securely store and  compare passwords.
-\end{itemize}\end{minipage}}}  % arguments 3 to 6 can be left empty
+                \item Learned how to work in multi-disciplinary teams
+                \item Learned how to manage deadlines and multitudes of workloads
+                \item Learned when to just be satisfied with \emph{good enough} while still trying to improve
+                \item Learned how to put together a concise and pleasing report using \LaTeX
+                \item Utilised object oriented programming to create a tower defense game using Qt \cpp, including pathfinding and network communication
+                \item Performed data analysis on large spreadsheets by use of Python, Julia and Jupyter Notebook
+                \item Worked on an Android app to communicate between two devices using NFC and encryption
+                \item Learned about embedded systems, I/O and interrupts using an ARM microcontroller
+                \item Implemented a PID controller with an Arduino to control a DC motor
+                \item Used PHP, HTML, MySQL and Bootstrap to create a simple education website
+            \end{itemize}\end{minipage}}}  % arguments 3 to 6 can be left empty
 \cventry{Jan 2010 -- Dec 2014}{National Senior Certificate}{Hoërskool Wesvalia}{Klerksdorp}{\textit{86\%}}{Graduated in the top 10 of the class with six distinctions.}
 
 \section{Experience}
+\cventry{Feb 2020 -- Jul 2020}{Junior Lecturer}{North-West University}{Potchefstroom}{}{\begin{itemize}
+        \item Lecturer for Introduction to Programming with Python
+        \item Learn to work with and teach to programming newcomers with various backgrounds
+        \item Wrote a Python script, utilising \emph{Moss} and \emph{mosspy} to check for similarities between student submissions
+    \end{itemize}}
 \cventry{Nov 2018 -- Dec 2018}{Software Engineering Intern}{Jurumani Solutions}{Midrand}{}{\begin{itemize}
-    \item Worked on a cloud-based service using Python, Flask, MySQL and AWS S3 to be able to easily and remotely send a print job to a network-connected printer.
-    \item Worked on a solution, using Python and a virtual environment, to extract data from multiple types of invoices and to store or send the data in JSON arrays.
-\end{itemize}}
+        \item Worked on a cloud-based service using Python, Flask, MySQL and AWS S3 to be able to easily and remotely send a print job to a network-connected printer
+        \item Worked on a solution, using Python and a virtual environment, to extract data from multiple types of invoices and to store or send the data in JSON arrays
+    \end{itemize}}
 \cventry{Jun 2018 -- Jul 2018}{Software Engineering Intern}{Nanoteq}{Centurion}{}{
     \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-    \item Gained experience with encryption, decryption and hashing.
-    \item Worked on a cryptography software using C++ Builder.
-    \item Added functionality to and fixed bugs within older code. 
-    \item Improved upon GUI to make it more user friendly and visually pleasing. 
-\end{itemize}\end{minipage}}}
+                \item Gained experience with encryption, decryption and hashing
+                \item Worked on a cryptography software using \cpp{} Builder
+                \item Added functionality to and fixed bugs within existing code
+                \item Improved upon GUI to make it more user friendly and visually pleasing
+            \end{itemize}\end{minipage}}}
 \section{Computing and Other Skills}
 \cvitem{Programming}{
     \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-    \item Algorithm and logic implementation with Python and C++
-    \item Solving of optimization problems and signal manipulation with MATLAB
-    \item Signal and image manipulation with Python
-    \item Android development with Android Studio, Java and Kotlin 
-    \item MySQL database design and development 
-    \item Web design with HTML and PHP 
-    \item Data Analysis with Julia and Python
-    \item PID Controller implementation with Arduino
-\end{itemize}\end{minipage}}}
+                \item Algorithm and logic implementation with Python and \cpp
+                \item Solving of optimization problems and signal manipulation with \MATLAB{}
+                \item Signal and image manipulation with Python
+                \item Android development with Android Studio, Java and Kotlin
+                \item MySQL database design and development
+                \item Web design with HTML and PHP
+                \item Data Analysis with Julia and Python
+                \item PID Controller implementation with Arduino
+            \end{itemize}\end{minipage}}}
 \cvitem{Applications}{
     \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-    \item Creation of professional reports with \LaTeX
-    \item Use of Microsoft Office or Libreoffice
-    \item Android development with Android Studio
-    \item General programming with Visual Studio Code
-    \item Desktop and development use of various Linux distributions
-    \item Compiling from source code
-    \item Hobbyist use of Darktable, GIMP and other photo manipulation software
-\end{itemize}\end{minipage}}}
+                \item Creation of professional reports with \LaTeX
+                \item Android development with Android Studio
+                \item General programming with Visual Studio Code
+                \item Desktop and development use of various Linux distributions
+                \item Compiling from source code
+                \item Hobbyist use of Darktable, GIMP and other photo manipulation software
+            \end{itemize}\end{minipage}}}
 \cvitem{Other}{Current clean driving license}
 
 \section{Languages}
