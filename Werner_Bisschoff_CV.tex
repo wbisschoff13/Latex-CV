@@ -11,7 +11,7 @@
 
 \usepackage[T1,OT1]{fontenc}
 \usepackage[notmath]{sansmathfonts}
-\newcommand{\MATLAB}{\textsc{Matlab}}
+\newcommand{\MATLAB}{\emph{MATLAB}}
 \newcommand{\cpp}{C\texttt{++}}
 \newcommand{\csharp}{C\texttt{\#}}
 % moderncv themes
@@ -61,66 +61,81 @@
 
 \section{Profile}
 \cvitem{Personal}{
-    I am a quiet, yet serious person that is dependable and persevering. I continuously strive for improvement and efficiency. I am a critical thinker and a problem solver. My hobbies include photography, playing the ukulele, and casual online gaming
+  Dependable and persevering, I continuously strive for improvement and efficiency. I am a critical thinker and a problem solver. My hobbies include photography, playing the ukulele, and casual online gaming
 }
 \cvitem{Career}{
-    My goal is to work in a software development position and to constantly improve myself and my workflow. I am a fast learner and always willing to adapt, learn and improve. I aim to deliver thorough, detailed work with patience and determination. I believe in good communication and mutual respect in the workplace.
+  My goal is to work in a software development position and to constantly improve myself and my workflow. I am a fast learner and always willing to adapt, learn and improve. I aim to deliver thorough, detailed work with patience and determination. I believe in good communication and mutual respect in the workplace.
 }
 
 \section{Education}
 \cventry{Feb 2015 -- Dec 2019}{B.Eng. Computer and Electronic Engineering}{North-West University}{Potchefstroom}{\textit{66\%}}{
-    \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-                \item Learned how to work in multi-disciplinary teams
-                \item Learned how to manage deadlines and multitudes of workloads
-                \item Learned when to just be satisfied with \emph{good enough} while still trying to improve
-                \item Learned how to put together a concise and pleasing report using \LaTeX
-                \item Utilised object oriented programming to create a tower defense game using Qt \cpp, including pathfinding and network communication
-                \item Performed data analysis on large spreadsheets by use of Python, Julia and Jupyter Notebook
-                \item Worked on an Android app to communicate between two devices using NFC and encryption
-                \item Learned about embedded systems, I/O and interrupts using an ARM microcontroller
-                \item Implemented a PID controller with an Arduino to control a DC motor
-                \item Used PHP, HTML, MySQL and Bootstrap to create a simple education website
-            \end{itemize}\end{minipage}}}  % arguments 3 to 6 can be left empty
-\cventry{Jan 2010 -- Dec 2014}{National Senior Certificate}{Hoërskool Wesvalia}{Klerksdorp}{\textit{86\%}}{Graduated in the top 10 of the class with six distinctions.}
+  \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
+        \item Final year project included an \emph{Android} application to emulate an NFC payment system based on the ISO 14443 protocol
+        \item Learned how to work in multi-disciplinary teams
+        \item Learned how to manage deadlines and large workloads
+        \item Learned how to put together a neat and concise report using \LaTeX
+        \item Utilised object oriented programming to create a tower defense game using \emph{Qt} \cpp, including pathfinding and network communication
+        \item Performed data analysis on large spreadsheets by use of \emph{Python}, \emph{Julia} and \emph{Jupyter} Notebook
+        \item Worked on an  app to communicate between two devices using NFC and encryption
+        \item Implemented a PID controller with an \emph{Arduino} to control a DC motor using control theory
+      \end{itemize}\end{minipage}}}  % arguments 3 to 6 can be left empty
+\cventry{Jan 2010 -- Dec 2014}{National Senior Certificate}{Hoërskool Wesvalia}{Klerksdorp}{\textit{86\%}}{Graduated in the top 10, with six distinctions.}
+
+
+\clearpage
+
 
 \section{Experience}
-\cventry{Feb 2020 -- Jul 2020}{Junior Lecturer}{North-West University}{Potchefstroom}{}{\begin{itemize}
-        \item Lecturer for Introduction to Programming with Python
-        \item Learn to work with and teach to programming newcomers with various backgrounds
-        \item Wrote a Python script, utilising \emph{Moss} and \emph{mosspy} to check for similarities between student submissions
-    \end{itemize}}
-\cventry{Nov 2018 -- Dec 2018}{Software Engineering Intern}{Jurumani Solutions}{Midrand}{}{\begin{itemize}
-        \item Worked on a cloud-based service using Python, Flask, MySQL and AWS S3 to be able to easily and remotely send a print job to a network-connected printer
-        \item Worked on a solution, using Python and a virtual environment, to extract data from multiple types of invoices and to store or send the data in JSON arrays
-    \end{itemize}}
+\cventry{Nov 2020 -- Dec 2020}{Freelance Full Stack Developer}{Expandage}{Remote}{}{
+  \begin{itemize}
+    \item Created a full stack content management system using \emph{React.js}, \emph{Django}, \emph{Python} and \emph{PostgreSQL}
+    \item Created a REST API with \emph{Django Rest Framework} to serve as a CRUD interface with both a local database and an external API
+    \item Created a recurring script to check for state updates for client data and update the database
+    \item Created an intuitive front end user interface using \emph{CSS}, \emph{HTML}, \emph{TailwindCSS}, \emph{JavaScript} and \emph{React.js}
+    \item Utilised live reload with \emph{Visual Studio Code}
+    \item Utilised \emph{Parcel} to bundle the application
+    \item Worked on a remote server via \emph{SSH} and \emph{Visual Studio Code}
+  \end{itemize}}
+\cventry{Feb 2020 -- Jul 2020}{Junior Lecturer}{North-West University}{Potchefstroom}{}{
+  \begin{itemize}
+    \item Lecturer for \emph{Introduction to Programming} with \emph{Python}
+    \item Learn to work with and teach to programming newcomers with various backgrounds
+    \item Wrote a \emph{Python} script which utilised \emph{Moss} and \emph{mosspy} to check for similarities between student submissions and analyse results
+  \end{itemize}}
+\cventry{Nov 2018 -- Dec 2018}{Software Engineering Intern}{Jurumani Solutions}{Midrand}{}{
+  \begin{itemize}
+    \item Worked on a cloud-based service using \emph{Python}, \emph{Flask}, \emph{MySQL} and \emph{AWS S3} to be able to easily and remotely send a print job to a network-connected printer
+    \item Worked on a solution, using \emph{Python} and a virtual environment, to extract data from multiple types of invoices and to store or send the data in JSON arrays
+  \end{itemize}}
 \cventry{Jun 2018 -- Jul 2018}{Software Engineering Intern}{Nanoteq}{Centurion}{}{
-    \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-                \item Gained experience with encryption, decryption and hashing
-                \item Worked on a cryptography software using \cpp{} Builder
-                \item Added functionality to and fixed bugs within existing code
-                \item Improved upon GUI to make it more user friendly and visually pleasing
-            \end{itemize}\end{minipage}}}
-\section{Computing and Other Skills}
-\cvitem{Programming}{
-    \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-                \item Algorithm and logic implementation with Python and \cpp
-                \item Solving of optimization problems and signal manipulation with \MATLAB{}
-                \item Signal and image manipulation with Python
-                \item Android development with Android Studio, Java and Kotlin
-                \item MySQL database design and development
-                \item Web design with HTML and PHP
-                \item Data Analysis with Julia and Python
-                \item PID Controller implementation with Arduino
-            \end{itemize}\end{minipage}}}
+  \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
+        \item Gained experience with encryption, decryption and hashing
+        \item Worked on a cryptography software using \emph{\cpp{} Builder}
+        \item Added functionality to and fixed bugs within existing code
+        \item Improved upon GUI to make it more user friendly and visually pleasing
+      \end{itemize}\end{minipage}}}
+\section{Other Skills}
+% \cvitem{Programming}{
+%   \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
+%         \item Algorithm and logic implementation with \emph{Python} and \cpp
+%         \item Solving of optimization problems and signal manipulation with \MATLAB{}
+%         \item Signal and image manipulation with \emph{Python}
+%         \item Android development with \emph{Android Studio}, \emph{Java} and \emph{Kotlin}
+%         \item \emph{MySQL} database design and development
+%         \item Web design with \emph{HTML} and \emph{CSS}
+%         \item Data Analysis with \emph{Julia} and \emph{Python}
+%         \item PID Controller implementation with \emph{Arduino}
+%       \end{itemize}\end{minipage}}}
+
 \cvitem{Applications}{
-    \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
-                \item Creation of professional reports with \LaTeX
-                \item Android development with Android Studio
-                \item General programming with Visual Studio Code
-                \item Desktop and development use of various Linux distributions
-                \item Compiling from source code
-                \item Hobbyist use of Darktable, GIMP and other photo manipulation software
-            \end{itemize}\end{minipage}}}
+  \adjustbox{valign=t}{\begin{minipage}{\linewidth}\begin{itemize}
+        \item Creation of professional reports with \LaTeX
+              % \item Android development with \emph{Android Studio}
+              % \item General programming with \emph{Visual Studio Code}
+        \item Desktop and development use of various \emph{Linux} distributions
+        \item Compiling from source code
+        \item Hobbyist use of \emph{Darktable}, \emph{GIMP} and other photo manipulation software
+      \end{itemize}\end{minipage}}}
 \cvitem{Other}{Current clean driving license}
 
 \section{Languages}
