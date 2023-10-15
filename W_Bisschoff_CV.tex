@@ -1,18 +1,5 @@
-%!TEX TS-program = xelatex
+%!TEX TS-program = lualatex
 %!TEX encoding = UTF-8 Unicode
-% Awesome CV LaTeX Template for CV/Resume
-%
-% This template has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Template license:
-% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
-%
-
 
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
@@ -20,16 +7,13 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[12pt, a4paper]{awesome-cv}
 
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=0.8cm}
-
-% Specify the location of the included fonts
-\fontdir[fonts/]
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=0.8cm} % Configure page margins with geometry
+\fontdir[fonts/] % Specify the location of the included fonts
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-emerald}
 % Uncomment if you would like to specify your own color
 \definecolor{awesome}{HTML}{4079be}
 
@@ -46,10 +30,7 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
-
-\newcommand{\MATLAB}{\emph{MATLAB}}
-\newcommand{\cpp}{C\texttt{++}}
-\newcommand{\csharp}{C\texttt{\#}}
+\newcommand\cpp{C\nolinebreak[4]\hspace{-.05em}\raisebox{.3ex}{\relsize{-1.5}{\textbf{++}}}\xspace}
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
@@ -60,7 +41,7 @@
 \position{Software Engineer}
 % \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
-\email{wbisschoff13@gmail.com}
+\email{mail@bisschoff.dev}
 \mobile{071 826 2066}
 % \homepage{www.posquit0.com}
 \github{wbisschoff13}
@@ -78,7 +59,6 @@
 
 % \quote{``Be the change that you want to see in the world."}
 
-
 %-------------------------------------------------------------------------------
 \begin{document}
 
@@ -93,7 +73,6 @@
 %   {Werner Bisschoff~~~·~~~Curriculum Vitae}
 %   {\thepage}
 
-
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
@@ -102,12 +81,11 @@
 \input{cv/experience.tex}
 \input{cv/skills.tex}
 \input{cv/education.tex}
-% \input{cv/extracurricular.tex}
+\input{cv/projects.tex}
 % \input{cv/honors.tex}
 % \input{cv/presentation.tex}
 % \input{cv/writing.tex}
 % \input{cv/committees.tex}
-
 
 %-------------------------------------------------------------------------------
 \end{document}
