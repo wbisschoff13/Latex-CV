@@ -20,8 +20,15 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[12pt, a4paper]{awesome-cv}
 
-% Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\def\sidemargin{2.4cm}
+\def\topbotmargin{2.4cm}
+\geometry{top=\topbotmargin, bottom=\topbotmargin, left=\sidemargin, right=\sidemargin}
+\fontdir[fonts/] % Specify the location of the included fonts
+
+\usepackage{pagecolor}
+\definecolor{page}{HTML}{fefdfa}
+\pagecolor{page}
+
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -29,16 +36,17 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+% \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-\definecolor{awesome}{HTML}{4079be}
+\definecolor{awesome}{HTML}{559CC7}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
-% \definecolor{darktext}{HTML}{414141}
-% \definecolor{text}{HTML}{333333}
-% \definecolor{graytext}{HTML}{5D5D5D}
-% \definecolor{lighttext}{HTML}{999999}
+\definecolor{darktext}{HTML}{333B42}
+\definecolor{text}{HTML}{080808}
+\definecolor{graytext}{HTML}{555E66}
+\definecolor{lighttext}{HTML}{8B9297}
+
 
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{true}
@@ -46,20 +54,24 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\renewcommand{\acvHeaderAfterNameSkip}{2.8mm}
+\renewcommand{\acvHeaderAfterPositionSkip}{0.8mm}
+\renewcommand{\acvHeaderAfterAddressSkip}{0.1mm}
+\renewcommand{\acvSectionTopSkip}{2mm}
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,left]{./img/profile}
+% \photo[circle,noedge,left]{./img/profile}
 \name{Werner}{Bisschoff}
-\position{Software Engineer}
-% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\position{Embedded Software Engineer}
+\address{Cape Town, Western Cape, South Africa}
 
-\email{wbisschoff13@gmail.com}
-\mobile{071 826 2066}
-% \homepage{www.posquit0.com}
+\email{mail@bisschoff.dev}
+\mobile{067 081 7719}
+% \homepage{bisschoff.dev} %TODO: add website
 \github{wbisschoff13}
 \linkedin{wbisschoff13}
 % \gitlab{gitlab-id}
@@ -89,9 +101,9 @@
 % The title of the letter
 % \lettertitle{Job Application}
 % How the letter is opened
-\letteropening{Dear Recruiting Manager,}
+\letteropening{Dear Hiring Manager,}
 % How the letter is closed
-\letterclosing{Sincerely,}
+\letterclosing{Best Regards,}
 % Any enclosures with the letter
 \letterenclosure[Attached]{Curriculum Vitae}
 
@@ -120,26 +132,17 @@
 
   \lettersection{About Me}
 
-  I am a recent Computer and Electronic Engineering graduate from the North-West University in South Africa. I am currently looking for a remote opportunity in the software development field.
-
-  % \lettersection{Why Google?}
-  % Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+  Adaptable and dedicated Embedded Software Engineer with a strong background in Computer and Electronic Engineering, adept at developing robust embedded software solutions. Proven proficiency in C++, Python, and embedded Linux, with a passion for continual learning and a demonstrated ability to swiftly adapt to evolving project requirements.
 
   \lettersection{Why Me?}
 
-  I am thorough and detailed in my work, and focus on getting the job done right.
-  I enjoy software engineering, coming up with creative ways to solve new problems, and the challenges and learning opportunities that come with it.
+  As a seasoned Embedded Software Engineer with a solid foundation in Computer and Electronic Engineering and a strong dedication to excellence, I am excited to bring my demonstrated expertise in developing robust embedded software solutions to your esteemed team.
 
-  I can work with many different technologies and am always eager to learn new technologies and adapt to the ever-changing software environment.
-  I put in the effort to fill in any gaps in my knowledge. I try to understand the project at hand in close detail, as well as how it fits in to the bigger picture and interacts with other parts and systems.
+  Leveraging my profound knowledge in C++, Python, and embedded Linux, I have successfully spearheaded and contributed to numerous complex projects, consistently ensuring the seamless integration of software solutions within intricate embedded systems.
 
-  I believe in good communication and respect in the workplace, as I realise that good teamwork and dedication are crucial to a highly functional working environment.
+  My unwavering commitment to learning and staying abreast of emerging technologies has enabled me to swiftly adapt to dynamic project requirements, while my passion for problem-solving has facilitated innovative solutions and enhanced user experiences.
 
-  I have a good understanding of Agile development, test-driven development and automated testing.
-
-  I believe that I could be a benefit to your company and work together with you to deliver the best.
-
-  Thank you for your time and consideration. I hope to hear from you soon.
+  I am eager to contribute my skills and drive to your organization's continued success.
 
 \end{cvletter}
 
