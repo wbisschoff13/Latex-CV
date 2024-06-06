@@ -274,6 +274,10 @@
 % Usage: \mobile{<mobile number>}
 \newcommand*{\mobile}[1]{\def\@mobile{#1}}
 
+% Defines writer's whatsapp (optional)
+% Usage: \whatsapp{<whatsapp number>}
+\newcommand*{\whatsapp}[1]{\def\@whatsapp{#1}}
+
 % Defines writer's email (optional)
 % Usage: \email{<email address>}
 \newcommand*{\email}[1]{\def\@email{#1}}
@@ -460,6 +464,12 @@
             {%
                 \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
                 \faMobile\acvHeaderIconSep\@mobile%
+            }%
+            \ifthenelse{\isundefined{\@whatsapp}}%
+            {}%
+            {%
+                \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+                \faWhatsapp\acvHeaderIconSep\@whatsapp%
             }%
             \ifthenelse{\isundefined{\@homepage}}%
             {}%
