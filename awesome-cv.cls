@@ -551,6 +551,7 @@
     \begin{minipage}[c]{\headerphotowidth}%
         \ifthenelse{\equal{\@photoalign}{right}}{\raggedleft\drawphoto}{}
     \end{minipage}
+    \vspace{-6mm}
 }
 
 % Define a footer for CV
@@ -566,6 +567,7 @@
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
     \vspace{\acvSectionTopSkip}
+    \vspace{5mm}
     \sectionstyle{#1}
     \phantomsection
     \color{gray}\vhrulefill{0.9pt}
@@ -587,12 +589,13 @@
     \paragraphstyle
 }{%
     \par
-    \vspace{2mm}
+    \vspace{-5mm}
 }
 
 % Define an environment for cventry
 \newenvironment{cventries}{%
     \vspace{\acvSectionContentTopSkip}
+    \vspace{-6.0mm}
     \begin{center}
         }{%
     \end{center}
@@ -600,7 +603,7 @@
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{%
-    \vspace{-2.0mm}
+    \vspace{3.0mm}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
