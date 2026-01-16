@@ -1,0 +1,55 @@
+name: Release CV
+
+on:
+  push:
+    tags:
+      - 'v*'  # Legacy semver tags (v1.0.0)
+      - '[0-9][0-9][0-9][0-9].[0-9][0-9]*'  # Calver tags (2025.01, 2025.01.16)
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build CV with XeLaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: W_Bisschoff_CV.tex
+          compiler: xelatex
+          args: '-interaction=nonstopmode -shell-escape'
+
+      - name: Extract version from tag
+        id: version
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          echo "version=$TAG" >> $GITHUB_OUTPUT
+          # Check if calver (starts with year) or semver (starts with v)
+          if [[ $TAG =~ ^[0-9]{4} ]]; then
+            echo "is_calver=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_calver=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: W_Bisschoff_CV.pdf
+          name: CV ${{ steps.version.outputs.version }}
+          body: |
+            ## Werner Bisschoff - Curriculum Vitae
+
+            **Version:** ${{ steps.version.outputs.version }}
+
+            **Built from commit:** ${{ github.sha }}
+
+            ---
+            *Use this PDF for the most up-to-date version of my CV.*
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
