@@ -313,6 +313,9 @@ OUTPUT W_Bisschoff_CV.xdv
 INPUT ./cv/projects.tex
 INPUT ./cv/projects.tex
 INPUT cv/projects.tex
+INPUT ./cv/opensource.tex
+INPUT ./cv/opensource.tex
+INPUT cv/opensource.tex
 INPUT W_Bisschoff_CV.aux
 INPUT ./W_Bisschoff_CV.out
 INPUT ./W_Bisschoff_CV.out
