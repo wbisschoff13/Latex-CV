@@ -31,3 +31,7 @@ node_modules/
 
 .taskmaster
 thoughts/
+
+# LaTeX auxiliary files
+*.aux
+*.out
