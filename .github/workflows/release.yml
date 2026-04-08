@@ -24,7 +24,10 @@ jobs:
           enable-cache: true
 
       - name: Generate LaTeX
-        run: cd resume-data && uv run python scripts/generate-latex.py
+        run: |
+          set -e
+          cd resume-data
+          uv run python scripts/generate-latex.py
 
       - name: Build CV with XeLaTeX
         uses: xu-cheng/latex-action@v3
