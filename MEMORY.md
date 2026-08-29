@@ -36,7 +36,7 @@
 
 ### Things to watch
 
-- If adding content, check `pdfinfo` page count — both variants must stay on 1 page
+- If adding content, check `pdfinfo` page count: **systems** must stay on **1 page**; **general** and **infrastructure** may be **2 pages** (infrastructure 2-page length accepted Aug 2026 — keep UMAN and Education)
 - Skills section uses inline format — verify with `pdftotext -layout` that categories render on same line as values
 - Cover letter uses `variant: "general"` — unaffected by the rename
 - The `position` field in variant files overrides `data.typ` — keep them in sync
