@@ -127,8 +127,8 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - [STAR 3] Built Python-based SOME/IP hardware mocks that simulated request/response behavior; integrated into CI so automated tests ran without physical hardware.
 
 #### Infrastructure bullets
-- [STAR 2] Proactively created a Docker development container replicating the exact hardware environment — including VLAN and networking configuration — reducing setup time from hours to under an hour and enabling remote teams to develop without physical hardware.
-- [STAR 3] Built Python hardware mocks simulating SOME/IP behavior; integrated into CI to enable automated testing without physical hardware, improving test coverage and developer productivity.
+- [STAR 2] Created a Docker dev container replicating the hardware environment — including VLAN and networking — reducing setup from hours to under an hour for remote teams.
+- [STAR 3] Built Python hardware mocks simulating SOME/IP behavior; integrated into CI to enable automated testing without physical hardware.
 
 ---
 
@@ -138,7 +138,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - **Role (systems):** Junior Lecturer
 - **Role (infrastructure):** Junior Lecturer
 - **Dates:** Feb 2020 – Dec 2020
-- **Used in variants:** general only (dropped from systems and infrastructure during page-trimming)
+- **Used in variants:** general only (skipped on systems for the 1-page firmware skim; skipped on infrastructure — first-year programming lecture does not help the platform skim)
 
 #### General
 - Lectured Python and C++ programming for Introduction to Programming for first year IT students in both remote and in-person settings.
@@ -148,6 +148,8 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 ## Education
 
 **B.Eng. Computer and Electronic Engineering** | North-West University | Potchefstroom | 2020
+
+Printed on PDFs via `education.yaml` `details` (systems details stay empty so that variant remains 1 page).
 
 #### General
 - Focus on embedded systems, software engineering, and electronic design
@@ -193,14 +195,16 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - Orchestrates spec-and-test-driven agent loops with human gates and git-enforced verification
 - Red → Green → Judge/Train → Refactor; Judge isolated from Green; rollback to the red commit
 - Repository: https://github.com/wernerbisschoff/deviatdd
-- Not rendered on PDFs (`lib/template.typ` prints header, summary, skills, experience, education only)
+- Not a separate Projects row on the PDFs (already the lead experience entry on general and infrastructure)
 
 ### Divergent Tabletop Wiki | Community Knowledge Base | Jun 2025 – Present
-- Built a community wiki using Astro, Elixir, and Docker for knowledge management
+- **Printed on:** general and infrastructure Projects section (not systems)
+- Built a community wiki using Astro, Elixir, and Docker for knowledge management (Astro omitted on infrastructure — ATS front-end guard)
 - Documented event frameworks, onboarding processes, and communication best practices
 - Created tooling for content management and community operations
 
 ### Ingenics Digital GmbH | Event-Driven FSM for Embedded Systems | Mar 2023 – May 2024
+- Not a separate Projects row on the PDFs (already an Ingenics experience bullet on general)
 - Designed event-driven finite state machine for I2C-based embedded system using C++ and FreeRTOS
 - Solved complex state management challenges in real-time embedded environment
 - **Outcome:** Maintainable in-house architecture leading to fewer bugs and quicker development cycles

@@ -2,6 +2,16 @@
 - institution: "North-West University"
   degree: "B.Eng. Computer and Electronic Engineering"
   field: "Computer and Electronic Engineering"
+  location: "Potchefstroom"
   start_date: "2016"
   end_date: "2020"
   cv_priority: 1
+  details:
+    general:
+      - "Focus on embedded systems, software engineering, and electronic design"
+      - "NFC payment emulator (Kotlin/Android), STM32 firmware (C), PID motor controller (Arduino)"
+      - "Data analysis with Python/pandas using linear regression, correlation and machine learning"
+    systems: []
+    infrastructure:
+      - "Focus on embedded systems, software engineering, and electronic design"
+      - "Developed data analysis pipeline with Python/pandas (linear regression, ML); built NFC payment emulator (Kotlin/Android)"

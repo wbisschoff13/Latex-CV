@@ -272,4 +272,27 @@
       variant: "infrastructure"
       cv_priority: 1
       website_show: true
+      star_ref: docker-development-container
+    - text: "Built Python hardware mocks simulating SOME/IP behavior; integrated into CI to enable automated testing without physical hardware."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: true
+      star_ref: some-ip-hardware-mocks
+
+- id: nwu-junior-lecturer
+  company: "North-West University"
+  location: "Potchefstroom"
+  role:
+    general: "Junior Lecturer"
+    systems: "Junior Lecturer"
+    infrastructure: "Junior Lecturer"
+  start_date: "Feb 2020"
+  end_date: "Dec 2020"
+  variant_tags:
+    - "general"
+  bullets:
+    - text: "Lectured Python and C++ programming for Introduction to Programming for first year IT students in both remote and in-person settings."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
       star_ref: null
