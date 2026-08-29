@@ -12,7 +12,23 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 1. Divergent Tabletop | Cape Town, ZA
+## 1. DeviaTDD | Independent / Open Source | Cape Town, ZA
+
+- **Role (general / infrastructure):** Author of DeviaTDD
+- **Dates:** May 2026 – Present
+- **STAR stories:** `deviatdd` (renamed from `sdd-framework`)
+- **Used in variants:** general and infrastructure (named experience entry, two bullets). Systems does **not** get the experience entry — a full header overflowed Education onto page 2. Named instead as a Cross-Domain Integration skill: `DeviaTDD (generation isolated from proof)`.
+
+#### General / Infrastructure bullets
+- [STAR deviatdd] Built an MIT Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates.
+- [STAR deviatdd] Generation and verification are separate: Judge is isolated from Green; failed verification rolls git back to the red commit.
+
+#### Systems
+- No experience entry (keeps FreeRTOS / ESP32 / NFC / HIL skim). Skill line only.
+
+---
+
+## 2. Divergent Tabletop | Cape Town, ZA
 
 ### General / Systems / Infrastructure
 - **Role (general):** Founder and Host
@@ -38,7 +54,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 2. FARO Africa | Cape Town, ZA
+## 3. FARO Africa | Cape Town, ZA
 
 - **Role (general):** Full-Stack Software Engineer
 - **Role (systems):** Embedded Systems & Integration Engineer
@@ -69,7 +85,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 3. Ingenics Digital GmbH | Remote / Germany
+## 4. Ingenics Digital GmbH | Remote / Germany
 
 - **Role (general):** Embedded Software Engineer
 - **Role (systems):** Firmware Engineer (Contract)
@@ -93,7 +109,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 4. UMAN Technologies | Century City, Cape Town
+## 5. UMAN Technologies | Century City, Cape Town
 
 - **Role (general):** Software Developer
 - **Role (systems):** Software Developer
@@ -116,7 +132,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 5. North-West University | Potchefstroom
+## 6. North-West University | Potchefstroom
 
 - **Role (general):** Junior Lecturer
 - **Role (systems):** Junior Lecturer
@@ -160,7 +176,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - **Primary Competencies:** C, C++, FreeRTOS, ESP32/ESP-IDF, NFC APDU (ISO 14443-4)
 - **Secondary Competencies:** NimBLE, Bare-Metal Runtimes, UART/SPI/I2C, Hardware-in-the-Loop (HIL) Testing
 - **Foundational Systems:** Linux IPC, Bash, Python (pytest, Custom Automation Frameworks), Assembly, System Modeling
-- **Cross-Domain Integration:** ERPNext (Integration-focused), Docker, Spec-Driven Development (SDD)
+- **Cross-Domain Integration:** ERPNext (Integration-focused), Docker, DeviaTDD (generation isolated from proof)
 
 ### Infrastructure
 - **Primary Competencies:** Python, Docker, Docker Compose, AWS (Solutions Architect – In Progress), PostgreSQL (Row-Level Security, Index Tuning, Connection Pooling)
@@ -171,6 +187,13 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 ---
 
 ## Projects
+
+### DeviaTDD | Independent Open-Source CLI | May 2026 – Present
+- MIT-licensed Python CLI (PyPI package `deviatdd`, CLI `deviate`)
+- Orchestrates spec-and-test-driven agent loops with human gates and git-enforced verification
+- Red → Green → Judge/Train → Refactor; Judge isolated from Green; rollback to the red commit
+- Repository: https://github.com/wernerbisschoff/deviatdd
+- Not rendered on PDFs (`lib/template.typ` prints header, summary, skills, experience, education only)
 
 ### Divergent Tabletop Wiki | Community Knowledge Base | Jun 2025 – Present
 - Built a community wiki using Astro, Elixir, and Docker for knowledge management

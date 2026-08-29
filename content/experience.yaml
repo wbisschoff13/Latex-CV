@@ -1,4 +1,39 @@
 ---
+- id: deviatdd
+  company: "Independent / Open Source"
+  location: "Cape Town"
+  role:
+    general: "Author of DeviaTDD"
+    systems: "Author of DeviaTDD"
+    infrastructure: "Author of DeviaTDD"
+  start_date: "May 2026"
+  end_date: null
+  variant_tags:
+    - "general"
+    - "infrastructure"
+  bullets:
+    - text: "Built an MIT Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: deviatdd
+    - text: "Generation and verification are separate: Judge is isolated from Green; failed verification rolls git back to the red commit."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: deviatdd
+    # website_show false: same facts as general, avoids duplicate bullets on the website.
+    - text: "Built an MIT Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: false
+      star_ref: deviatdd
+    - text: "Generation and verification are separate: Judge is isolated from Green; failed verification rolls git back to the red commit."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: false
+      star_ref: deviatdd
+
 - id: divergent-tabletop
   company: "Divergent Tabletop"
   location: "Cape Town"
