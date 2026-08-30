@@ -1,4 +1,39 @@
 ---
+- id: fivewest
+  company: "FiveWest"
+  location: "Cape Town"
+  role:
+    general: "Software Engineer"
+    systems: "Software Engineer"
+    infrastructure: "Software Engineer"
+  start_date: "Aug 2026"
+  end_date: null
+  variant_tags:
+    - "general"
+    - "systems"
+    - "infrastructure"
+  bullets:
+    - text: "Built a dedicated outbox for durable webhook delivery."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: null
+    - text: "Bringing in a dedicated AI workflow for spec-and-test-driven development."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: null
+    - text: "Built a dedicated outbox for durable webhook delivery."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: false
+      star_ref: null
+    - text: "Bringing in a dedicated AI workflow for spec-and-test-driven development."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: false
+      star_ref: null
+
 - id: deviatdd
   company: "Independent / Open Source"
   location: "Cape Town"

@@ -30,12 +30,19 @@
 
 #let _exp_entries = _experience.map(e => {
   let bullets = e.at("bullets", default: ())
+  let yaml_tags = e.at("variant_tags", default: ())
   let desc = (:)
   let tags = ()
   for v in _variants {
     let bv = _bullets_for_variant(bullets, v)
     desc.insert(v, bv)
     if bv.len() > 0 { tags = tags + (v,) }
+  }
+  // Honor explicit variant_tags so a current-job header can print with no bullets.
+  if type(yaml_tags) == array {
+    for t in yaml_tags {
+      if not tags.contains(t) { tags = tags + (t,) }
+    }
   }
   (
     role: e.at("role", default: (general: "")),

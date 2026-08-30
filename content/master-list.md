@@ -12,7 +12,22 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 1. DeviaTDD | Independent / Open Source | Cape Town, ZA
+## 1. FiveWest | Cape Town, ZA
+
+- **Role (all variants):** Software Engineer
+- **Dates:** Aug 2026 – Present
+- **Used in variants:** all three (header required). Systems may print the header with no bullets if the 1-page budget is tight.
+
+#### General / Infrastructure bullets
+- Built a dedicated outbox for durable webhook delivery.
+- Bringing in a dedicated AI workflow for spec-and-test-driven development.
+
+#### Systems
+- Header only (Software Engineer, FiveWest, Aug 2026 – Present). The method line overflowed Education onto page 2 and was dropped. Older jobs kept.
+
+---
+
+## 2. DeviaTDD | Independent / Open Source | Cape Town, ZA
 
 - **Role (general / infrastructure):** Author of DeviaTDD
 - **Dates:** May 2026 – Present
@@ -29,7 +44,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 2. Divergent Tabletop | Cape Town, ZA
+## 3. Divergent Tabletop | Cape Town, ZA
 
 ### General / Systems / Infrastructure
 - **Role (general):** Founder and Host
@@ -55,7 +70,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 3. FARO Africa | Cape Town, ZA
+## 4. FARO Africa | Cape Town, ZA
 
 - **Role (general):** Full-Stack Software Engineer
 - **Role (systems):** Embedded Systems & Integration Engineer
@@ -86,7 +101,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 4. Ingenics Digital GmbH | Remote / Germany
+## 5. Ingenics Digital GmbH | Remote / Germany
 
 - **Role (general):** Embedded Software Engineer
 - **Role (systems):** Firmware Engineer (Contract)
@@ -112,7 +127,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 5. UMAN Technologies | Century City, Cape Town
+## 6. UMAN Technologies | Century City, Cape Town
 
 - **Role (general):** Software Developer
 - **Role (systems):** Software Developer
@@ -135,7 +150,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 6. North-West University | Potchefstroom
+## 7. North-West University | Potchefstroom
 
 - **Role (general):** Junior Lecturer
 - **Role (systems):** Junior Lecturer
