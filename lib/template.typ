@@ -121,18 +121,20 @@
     #if entries.len() > 0 [
       = Experience
       #for entry in entries [
-        #resume-entry(
-          title: entry.role,
-          location: if entry.location != none { entry.location } else { "" },
-          date: if entry.end_date != none {
-            entry.start_date + " – " + entry.end_date
-          } else { entry.start_date },
-          description: entry.company,
-        )
-        #if entry.description.len() > 0 [
-          #resume-item[
-            #for desc in entry.description [
-              - #desc
+        #block(breakable: false)[
+          #resume-entry(
+            title: entry.role,
+            location: if entry.location != none { entry.location } else { "" },
+            date: if entry.end_date != none {
+              entry.start_date + " – " + entry.end_date
+            } else { entry.start_date },
+            description: entry.company,
+          )
+          #if entry.description.len() > 0 [
+            #resume-item[
+              #for desc in entry.description [
+                - #desc
+              ]
             ]
           ]
         ]

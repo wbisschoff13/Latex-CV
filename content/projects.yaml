@@ -24,18 +24,8 @@
       - "Docker"
   start_date: "Jun 2025"
   end_date: null
-  variant_tags:
-    - "general"
-    - "infrastructure"
-  bullets:
-    general:
-      - "Built a community wiki using Astro, Elixir, and Docker for knowledge management."
-      - "Documented event frameworks, onboarding processes, and communication best practices."
-      - "Created tooling for content management and community operations."
-    infrastructure:
-      - "Built a community wiki using Elixir and Docker for knowledge management."
-      - "Documented event frameworks, onboarding processes, and communication best practices."
-      - "Created tooling for content management and community operations."
+  # Not printed on PDFs: duplicates the Divergent Tabletop experience entry.
+  variant_tags: []
   cv_priority: 1
   website_show: true
 

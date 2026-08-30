@@ -22,6 +22,11 @@
       cv_priority: 1
       website_show: true
       star_ref: deviatdd
+    - text: "Combines ATDD, TDD, and test-driven agentic development so structured specs surface misalignment before implementation."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: deviatdd
     # website_show false: same facts as general, avoids duplicate bullets on the website.
     - text: "Built an MIT Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates."
       variant: "infrastructure"
@@ -29,6 +34,11 @@
       website_show: false
       star_ref: deviatdd
     - text: "Generation and verification are separate: Judge is isolated from Green; failed verification rolls git back to the red commit."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: false
+      star_ref: deviatdd
+    - text: "Combines ATDD, TDD, and test-driven agentic development so structured specs surface misalignment before implementation."
       variant: "infrastructure"
       cv_priority: 1
       website_show: false
@@ -117,7 +127,7 @@
       variant: "general"
       cv_priority: 1
       website_show: true
-      star_ref: null
+      star_ref: nfc-e-ink-label-app
     - text: "Provisioned AWS infrastructure with Pulumi; deployed Inngest and PayloadCMS services."
       variant: "general"
       cv_priority: 1
@@ -147,7 +157,7 @@
       variant: "infrastructure"
       cv_priority: 1
       website_show: true
-      star_ref: null
+      star_ref: ux-improvements
     - text: "Refactored and extended ERPNext via Python and JavaScript server hooks."
       variant: "infrastructure"
       cv_priority: 1
@@ -168,6 +178,26 @@
       cv_priority: 2
       website_show: true
       star_ref: null
+    - text: "Pushed back on a training-gap framing for warehouse errors; identified poor UX as the cause and drove fewer-tap changes the team adopted."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: ux-improvements
+    - text: "Championed a testing framework despite no allocated time; worked around Frappe's non-reproducible suite and backfilled regression and integration tests that run on GitHub CI for every PR."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: testing-framework
+    - text: "Championed a testing framework despite no allocated time; worked around Frappe's non-reproducible suite and backfilled regression and integration tests that run on GitHub CI for every PR."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: false
+      star_ref: testing-framework
+    - text: "Reverse-engineered the proprietary e-ink image format and APDU transfer so an Expo Android app could generate and send shelf-label images as an R&D viability study."
+      variant: "general"
+      cv_priority: 2
+      website_show: true
+      star_ref: nfc-e-ink-label-app
 
 - id: ingenics-digital
   company: "Ingenics Digital GmbH (through ViVa Outsourcing)"
@@ -187,7 +217,7 @@
       variant: "general"
       cv_priority: 1
       website_show: true
-      star_ref: null
+      star_ref: finite-state-machine-framework
     - text: "Developed ESP32 applications (C/C++, ESP-IDF) with configurable BLE stack, TinyFrame protocol, and FOTA updates."
       variant: "general"
       cv_priority: 1
@@ -228,6 +258,16 @@
       cv_priority: 1
       website_show: true
       star_ref: null
+    - text: "Implemented proprietary WBUS3 on I2C (flow control, interrupt line, reset) on ESP32, with unit tests and hardware request mocks so testing no longer depended on manual hardware access."
+      variant: "general"
+      cv_priority: 1
+      website_show: true
+      star_ref: wbus3-protocol-implementation
+    - text: "Created unit tests and hardware request mocks for the WBUS3 I2C protocol so the customer could continue development without physical hardware."
+      variant: "infrastructure"
+      cv_priority: 1
+      website_show: true
+      star_ref: wbus3-protocol-implementation
 
 - id: uman-technologies
   company: "UMAN Technologies"

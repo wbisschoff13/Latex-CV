@@ -17,11 +17,12 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - **Role (general / infrastructure):** Author of DeviaTDD
 - **Dates:** May 2026 – Present
 - **STAR stories:** `deviatdd` (renamed from `sdd-framework`)
-- **Used in variants:** general and infrastructure (named experience entry, two bullets). Systems does **not** get the experience entry — a full header overflowed Education onto page 2. Named instead as a Cross-Domain Integration skill: `DeviaTDD (generation isolated from proof)`.
+- **Used in variants:** general and infrastructure (named experience entry). Systems does **not** get the experience entry — a full header overflowed Education onto page 2. Named instead as a Cross-Domain Integration skill: `DeviaTDD (generation isolated from proof)`.
 
 #### General / Infrastructure bullets
 - [STAR deviatdd] Built an MIT Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates.
 - [STAR deviatdd] Generation and verification are separate: Judge is isolated from Green; failed verification rolls git back to the red commit.
+- [STAR deviatdd] Combines ATDD, TDD, and test-driven agentic development so structured specs surface misalignment before implementation.
 
 #### Systems
 - No experience entry (keeps FreeRTOS / ESP32 / NFC / HIL skim). Skill line only.
@@ -63,11 +64,12 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 #### General bullets
 - Extended ERPNext using Python/JavaScript to improve workflows, pricing logic, and operational reporting (SQL) → reduced manual reporting time and improved data accuracy.
-- Built mobile application in Expo, including NFC (ISO 14443-4 APDUs) for e-paper price tags and card operations → enabled real-time price updates with fewer tagging errors.
-- Migrated internal mobile Retool workflows to Expo → improved performance and enhanced long-term maintainability.
+- [STAR nfc-e-ink-label-app] Built mobile application in Expo, including NFC (ISO 14443-4 APDUs) for e-paper price tags and card operations → enabled real-time price updates with fewer tagging errors.
+- [STAR nfc-e-ink-label-app] Reverse-engineered the proprietary e-ink image format and APDU transfer so an Expo Android app could generate and send shelf-label images as an R&D viability study.
+- Architected migration of internal Retool workflows to Expo/React Native, reducing vendor licensing overhead.
 - Provisioned AWS infrastructure with Pulumi; deployed Inngest and PayloadCMS services.
-- Diagnosed and resolved issues in a large existing ERPNext installation.
-- Introduced LLM-assisted development workflows → improved debugging speed and code review throughput, enabling faster iteration.
+- [STAR ux-improvements] Pushed back on a training-gap framing for warehouse errors; identified poor UX as the cause and drove fewer-tap changes the team adopted.
+- [STAR testing-framework] Championed a testing framework despite no allocated time; worked around Frappe's non-reproducible suite and backfilled regression and integration tests that run on GitHub CI for every PR.
 
 #### Systems bullets
 - Designed ISO 14443-4 NFC communication architectures for e-paper display nodes and secure card reader matrices.
@@ -76,12 +78,11 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - Introduced LLM-assisted development workflows to improve debugging speed and code review throughput.
 
 #### Infrastructure bullets
-- [STAR 9] Identified poor UX as root cause of recurring user errors — pushed back against "training gap" framing, proposed user research to validate, and drove UX improvements that reduced task completion time and error rates.
-- Refactored and extended ERPNext via Python and JavaScript server hooks, optimizing pricing matrices and BI reporting.
-- Architected migration of internal Retool workflows to Expo/React Native, reducing vendor licensing overhead.
-- Built custom NFC scanner utilities within Expo for instantaneous physical inventory syncs.
+- [STAR ux-improvements] Identified poor UX as root cause of recurring user errors — drove UX improvements that reduced task completion time and error rates.
+- Refactored and extended ERPNext via Python and JavaScript server hooks.
 - Provisioned and maintained a secure virtualized Linux infrastructure environment using Docker Compose for container isolation and writing custom backup and monitoring scripts.
 - Diagnosed and resolved issues in a large existing ERPNext installation; introduced LLM-assisted debugging workflows.
+- [STAR testing-framework] Championed a testing framework despite no allocated time; worked around Frappe's non-reproducible suite and backfilled regression and integration tests that run on GitHub CI for every PR.
 
 ---
 
@@ -93,10 +94,11 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - **Dates:** Mar 2023 – May 2024
 
 #### General bullets
-- Designed event-driven FSM for I2C-based embedded system (C++/FreeRTOS) → maintainable architecture, fewer bugs.
+- [STAR finite-state-machine-framework] Designed event-driven FSM for I2C-based embedded system (C++/FreeRTOS) → maintainable architecture, fewer bugs.
 - Developed ESP32 applications (C/C++, ESP-IDF) with configurable BLE stack, TinyFrame protocol, and FOTA updates.
 - Built Python tooling for serial/BLE communication, hardware mocks, and pytest async workflows → accelerated testing.
 - Developed active object within QP Real-Time Embedded Framework (QSPY) to simulate device behaviour.
+- [STAR wbus3-protocol-implementation] Implemented proprietary WBUS3 on I2C (flow control, interrupt line, reset) on ESP32, with unit tests and hardware request mocks so testing no longer depended on manual hardware access.
 
 #### Systems bullets
 - Architected deterministic FSMs on dual-core ESP32 using FreeRTOS for concurrent sensor arrays.
@@ -106,6 +108,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - Built modular Python utility structures and automation scripts for internal configuration schema validation.
 - Designed data handling pipelines ensuring data transfer consistency across runtime platforms using declarative specifications.
 - Developed Python hardware mocks enabling faster development cycles with fewer hardware dependencies.
+- [STAR wbus3-protocol-implementation] Created unit tests and hardware request mocks for the WBUS3 I2C protocol so the customer could continue development without physical hardware.
 
 ---
 
@@ -198,8 +201,8 @@ Printed on PDFs via `education.yaml` `details` (systems details stay empty so th
 - Not a separate Projects row on the PDFs (already the lead experience entry on general and infrastructure)
 
 ### Divergent Tabletop Wiki | Community Knowledge Base | Jun 2025 – Present
-- **Printed on:** general and infrastructure Projects section (not systems)
-- Built a community wiki using Astro, Elixir, and Docker for knowledge management (Astro omitted on infrastructure — ATS front-end guard)
+- Not a separate Projects row on the PDFs (duplicates the Divergent Tabletop experience entry)
+- Built a community wiki using Astro, Elixir, and Docker for knowledge management
 - Documented event frameworks, onboarding processes, and communication best practices
 - Created tooling for content management and community operations
 
