@@ -9,9 +9,14 @@
   cat.variant == "infrastructure"
 )
 
+#let filtered_projects = cv_data.projects.filter(p =>
+  p.variant_tags.contains("infrastructure")
+)
+
 #let variant_data = cv_data + (
   experience: filtered_experience,
   skills: filtered_skills,
+  projects: filtered_projects,
 )
 
 #render_cv(variant_data, variant: "infrastructure")

@@ -62,7 +62,7 @@
   items:
     - "ERPNext (Integration-focused)"
     - "Docker"
-    - "Spec-Driven Development (SDD)"
+    - "DeviaTDD (generation isolated from proof)"
   variant: "systems"
 
 - category: "Primary Competencies"

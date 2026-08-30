@@ -75,7 +75,7 @@ Primary Tool Execution API: `mise run <task>`
 - Install git hooks via `mise run hooks` after cloning/setup
 - Compilation success is the primary test (no unit test framework)
 - Review generated PDFs visually for layout regressions
-- **Check page count**: after any content change, verify PDF page count via `pdfinfo <file>.pdf`. Both systems and infrastructure variants must fit on **1 page each**. The general CV may be 2 pages. If overflowing, trim experience bullets (Junior Lecturer can be dropped from variants, or shorten verbose bullets).
+- **Check page count**: after any content change, verify PDF page count via `pdfinfo <file>.pdf`. **systems** must stay on **1 page**. **general** and **infrastructure** may be **2 pages**. If systems overflows 1 page, trim experience bullets (Junior Lecturer can be dropped from variants, or shorten verbose bullets). Do not delete UMAN, Education, or other existing jobs to force infrastructure back onto 1 page.
 - **Check skills section rendering**: run `pdftotext -layout <file>.pdf` and inspect the Skills section to ensure category labels render inline with values (not wrapped/column-reordered). Non-layout `pdftotext` reads grid content column-by-column, giving false-positives.
 
 ## Content Master

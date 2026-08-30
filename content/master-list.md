@@ -12,7 +12,39 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 1. Divergent Tabletop | Cape Town, ZA
+## 1. FiveWest | Cape Town, ZA
+
+- **Role (general / infrastructure):** Software Engineer
+- **Dates:** Aug 2026 – Present
+- **Used in variants:** general and infrastructure only. Not on systems yet (header alone overflowed Education).
+
+#### General / Infrastructure bullets
+- Built a dedicated outbox for durable webhook delivery.
+- Bringing in a dedicated AI workflow for spec-and-test-driven development.
+
+#### Systems
+- Omitted. Do not print the FiveWest header or bullets until Werner asks.
+
+---
+
+## 2. DeviaTDD | Independent / Open Source | Cape Town, ZA
+
+- **Role (general / infrastructure):** Author of DeviaTDD
+- **Dates:** May 2026 – Present
+- **STAR stories:** `deviatdd` (renamed from `sdd-framework`)
+- **Used in variants:** general and infrastructure (named experience entry). Systems does **not** get the experience entry — a full header overflowed Education onto page 2. Named instead as a Cross-Domain Integration skill: `DeviaTDD (generation isolated from proof)`.
+
+#### General / Infrastructure bullets
+- [STAR deviatdd] Built an MIT Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates.
+- [STAR deviatdd] Generation and verification are separate: Judge is isolated from Green; failed verification rolls git back to the red commit.
+- [STAR deviatdd] Combines ATDD, TDD, and test-driven agentic development so structured specs surface misalignment before implementation.
+
+#### Systems
+- No experience entry (keeps FreeRTOS / ESP32 / NFC / HIL skim). Skill line only.
+
+---
+
+## 3. Divergent Tabletop | Cape Town, ZA
 
 ### General / Systems / Infrastructure
 - **Role (general):** Founder and Host
@@ -38,7 +70,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ---
 
-## 2. FARO Africa | Cape Town, ZA
+## 4. FARO Africa | Cape Town, ZA
 
 - **Role (general):** Full-Stack Software Engineer
 - **Role (systems):** Embedded Systems & Integration Engineer
@@ -47,11 +79,12 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 #### General bullets
 - Extended ERPNext using Python/JavaScript to improve workflows, pricing logic, and operational reporting (SQL) → reduced manual reporting time and improved data accuracy.
-- Built mobile application in Expo, including NFC (ISO 14443-4 APDUs) for e-paper price tags and card operations → enabled real-time price updates with fewer tagging errors.
-- Migrated internal mobile Retool workflows to Expo → improved performance and enhanced long-term maintainability.
+- [STAR nfc-e-ink-label-app] Built mobile application in Expo, including NFC (ISO 14443-4 APDUs) for e-paper price tags and card operations → enabled real-time price updates with fewer tagging errors.
+- [STAR nfc-e-ink-label-app] Reverse-engineered the proprietary e-ink image format and APDU transfer so an Expo Android app could generate and send shelf-label images as an R&D viability study.
+- Architected migration of internal Retool workflows to Expo/React Native, reducing vendor licensing overhead.
 - Provisioned AWS infrastructure with Pulumi; deployed Inngest and PayloadCMS services.
-- Diagnosed and resolved issues in a large existing ERPNext installation.
-- Introduced LLM-assisted development workflows → improved debugging speed and code review throughput, enabling faster iteration.
+- [STAR ux-improvements] Pushed back on a training-gap framing for warehouse errors; identified poor UX as the cause and drove fewer-tap changes the team adopted.
+- [STAR testing-framework] Championed a testing framework despite no allocated time; worked around Frappe's non-reproducible suite and backfilled regression and integration tests that run on GitHub CI for every PR.
 
 #### Systems bullets
 - Designed ISO 14443-4 NFC communication architectures for e-paper display nodes and secure card reader matrices.
@@ -60,16 +93,15 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - Introduced LLM-assisted development workflows to improve debugging speed and code review throughput.
 
 #### Infrastructure bullets
-- [STAR 9] Identified poor UX as root cause of recurring user errors — pushed back against "training gap" framing, proposed user research to validate, and drove UX improvements that reduced task completion time and error rates.
-- Refactored and extended ERPNext via Python and JavaScript server hooks, optimizing pricing matrices and BI reporting.
-- Architected migration of internal Retool workflows to Expo/React Native, reducing vendor licensing overhead.
-- Built custom NFC scanner utilities within Expo for instantaneous physical inventory syncs.
+- [STAR ux-improvements] Identified poor UX as root cause of recurring user errors — drove UX improvements that reduced task completion time and error rates.
+- Refactored and extended ERPNext via Python and JavaScript server hooks.
 - Provisioned and maintained a secure virtualized Linux infrastructure environment using Docker Compose for container isolation and writing custom backup and monitoring scripts.
 - Diagnosed and resolved issues in a large existing ERPNext installation; introduced LLM-assisted debugging workflows.
+- [STAR testing-framework] Championed a testing framework despite no allocated time; worked around Frappe's non-reproducible suite and backfilled regression and integration tests that run on GitHub CI for every PR.
 
 ---
 
-## 3. Ingenics Digital GmbH | Remote / Germany
+## 5. Ingenics Digital GmbH | Remote / Germany
 
 - **Role (general):** Embedded Software Engineer
 - **Role (systems):** Firmware Engineer (Contract)
@@ -77,10 +109,11 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - **Dates:** Mar 2023 – May 2024
 
 #### General bullets
-- Designed event-driven FSM for I2C-based embedded system (C++/FreeRTOS) → maintainable architecture, fewer bugs.
+- [STAR finite-state-machine-framework] Designed event-driven FSM for I2C-based embedded system (C++/FreeRTOS) → maintainable architecture, fewer bugs.
 - Developed ESP32 applications (C/C++, ESP-IDF) with configurable BLE stack, TinyFrame protocol, and FOTA updates.
 - Built Python tooling for serial/BLE communication, hardware mocks, and pytest async workflows → accelerated testing.
 - Developed active object within QP Real-Time Embedded Framework (QSPY) to simulate device behaviour.
+- [STAR wbus3-protocol-implementation] Implemented proprietary WBUS3 on I2C (flow control, interrupt line, reset) on ESP32, with unit tests and hardware request mocks so testing no longer depended on manual hardware access.
 
 #### Systems bullets
 - Architected deterministic FSMs on dual-core ESP32 using FreeRTOS for concurrent sensor arrays.
@@ -90,10 +123,11 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - Built modular Python utility structures and automation scripts for internal configuration schema validation.
 - Designed data handling pipelines ensuring data transfer consistency across runtime platforms using declarative specifications.
 - Developed Python hardware mocks enabling faster development cycles with fewer hardware dependencies.
+- [STAR wbus3-protocol-implementation] Created unit tests and hardware request mocks for the WBUS3 I2C protocol so the customer could continue development without physical hardware.
 
 ---
 
-## 4. UMAN Technologies | Century City, Cape Town
+## 6. UMAN Technologies | Century City, Cape Town
 
 - **Role (general):** Software Developer
 - **Role (systems):** Software Developer
@@ -111,18 +145,18 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - [STAR 3] Built Python-based SOME/IP hardware mocks that simulated request/response behavior; integrated into CI so automated tests ran without physical hardware.
 
 #### Infrastructure bullets
-- [STAR 2] Proactively created a Docker development container replicating the exact hardware environment — including VLAN and networking configuration — reducing setup time from hours to under an hour and enabling remote teams to develop without physical hardware.
-- [STAR 3] Built Python hardware mocks simulating SOME/IP behavior; integrated into CI to enable automated testing without physical hardware, improving test coverage and developer productivity.
+- [STAR 2] Created a Docker dev container replicating the hardware environment — including VLAN and networking — reducing setup from hours to under an hour for remote teams.
+- [STAR 3] Built Python hardware mocks simulating SOME/IP behavior; integrated into CI to enable automated testing without physical hardware.
 
 ---
 
-## 5. North-West University | Potchefstroom
+## 7. North-West University | Potchefstroom
 
 - **Role (general):** Junior Lecturer
 - **Role (systems):** Junior Lecturer
 - **Role (infrastructure):** Junior Lecturer
 - **Dates:** Feb 2020 – Dec 2020
-- **Used in variants:** general only (dropped from systems and infrastructure during page-trimming)
+- **Used in variants:** general only (skipped on systems for the 1-page firmware skim; skipped on infrastructure — first-year programming lecture does not help the platform skim)
 
 #### General
 - Lectured Python and C++ programming for Introduction to Programming for first year IT students in both remote and in-person settings.
@@ -132,6 +166,8 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 ## Education
 
 **B.Eng. Computer and Electronic Engineering** | North-West University | Potchefstroom | 2020
+
+Printed on PDFs via `education.yaml` `details` (systems details stay empty so that variant remains 1 page).
 
 #### General
 - Focus on embedded systems, software engineering, and electronic design
@@ -160,7 +196,7 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 - **Primary Competencies:** C, C++, FreeRTOS, ESP32/ESP-IDF, NFC APDU (ISO 14443-4)
 - **Secondary Competencies:** NimBLE, Bare-Metal Runtimes, UART/SPI/I2C, Hardware-in-the-Loop (HIL) Testing
 - **Foundational Systems:** Linux IPC, Bash, Python (pytest, Custom Automation Frameworks), Assembly, System Modeling
-- **Cross-Domain Integration:** ERPNext (Integration-focused), Docker, Spec-Driven Development (SDD)
+- **Cross-Domain Integration:** ERPNext (Integration-focused), Docker, DeviaTDD (generation isolated from proof)
 
 ### Infrastructure
 - **Primary Competencies:** Python, Docker, Docker Compose, AWS (Solutions Architect – In Progress), PostgreSQL (Row-Level Security, Index Tuning, Connection Pooling)
@@ -172,12 +208,21 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ## Projects
 
+### DeviaTDD | Independent Open-Source CLI | May 2026 – Present
+- MIT-licensed Python CLI (PyPI package `deviatdd`, CLI `deviate`)
+- Orchestrates spec-and-test-driven agent loops with human gates and git-enforced verification
+- Red → Green → Judge/Train → Refactor; Judge isolated from Green; rollback to the red commit
+- Repository: https://github.com/wernerbisschoff/deviatdd
+- Not a separate Projects row on the PDFs (already the lead experience entry on general and infrastructure)
+
 ### Divergent Tabletop Wiki | Community Knowledge Base | Jun 2025 – Present
+- Not a separate Projects row on the PDFs (duplicates the Divergent Tabletop experience entry)
 - Built a community wiki using Astro, Elixir, and Docker for knowledge management
 - Documented event frameworks, onboarding processes, and communication best practices
 - Created tooling for content management and community operations
 
 ### Ingenics Digital GmbH | Event-Driven FSM for Embedded Systems | Mar 2023 – May 2024
+- Not a separate Projects row on the PDFs (already an Ingenics experience bullet on general)
 - Designed event-driven finite state machine for I2C-based embedded system using C++ and FreeRTOS
 - Solved complex state management challenges in real-time embedded environment
 - **Outcome:** Maintainable in-house architecture leading to fewer bugs and quicker development cycles

@@ -91,15 +91,15 @@
   result: >
     The team eventually adopted the UX changes. Fewer taps reduced task completion time and user error rates dropped — validating that the problem was UX, not training.
 
-- id: sdd-framework
+- id: deviatdd
   situation: >
     AI-assisted development often produced outputs misaligned with my vision — requiring many iterations to reach satisfaction. I was doing "vibe coding" without deterministic guardrails to keep AI on track.
   task: >
-    Create a development framework that would add determinism to agentic coding, ensuring AI worked on the right problems and stayed aligned with the intended outcome.
+    Create DeviaTDD, a development framework that would add determinism to agentic coding, ensuring AI worked on the right problems and stayed aligned with the intended outcome.
   action: >
-    I designed a Spec-Driven Development (SDD) framework that combines Acceptance Test Driven Development, Test Driven Development, and Test Driven Agentic Development. The framework provides structured specifications before coding, creating checkpoints that surface misalignments and inefficiencies before they become problems.
+    I designed DeviaTDD, a Spec-Driven Development (SDD) framework that combines Acceptance Test Driven Development, Test Driven Development, and Test Driven Agentic Development. The framework provides structured specifications before coding, creating checkpoints that surface misalignments and inefficiencies before they become problems.
   result: >
-    Using SDD, I caught inefficiencies and misalignment early across multiple projects. The framework improved my agentic coding efficiency by reducing wasted iterations and keeping AI output aligned with goals.
+    Using DeviaTDD, I caught inefficiencies and misalignment early across multiple projects. The framework improved my agentic coding efficiency by reducing wasted iterations and keeping AI output aligned with goals.
 
 - id: kintree-crdt-architecture
   situation: >

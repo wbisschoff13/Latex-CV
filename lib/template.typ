@@ -42,11 +42,16 @@
 }
 
 #let _resolve_projects(entries, variant) = {
-  entries.map(entry => (
-    name: entry.at("name", default: ""),
-    description: _resolve(entry.at("description", default: ()), variant),
-    link: entry.at("link", default: none),
-  ))
+  entries
+    .map(entry => (
+      name: entry.at("name", default: ""),
+      description: _resolve(entry.at("description", default: ()), variant),
+      link: entry.at("link", default: none),
+      technologies: _resolve(entry.at("technologies", default: ()), variant),
+      start_date: entry.at("start_date", default: ""),
+      end_date: entry.at("end_date", default: none),
+    ))
+    .filter(p => p.description.len() > 0)
 }
 
 #let render_cv(data, variant: "general") = {
@@ -116,18 +121,20 @@
     #if entries.len() > 0 [
       = Experience
       #for entry in entries [
-        #resume-entry(
-          title: entry.role,
-          location: if entry.location != none { entry.location } else { "" },
-          date: if entry.end_date != none {
-            entry.start_date + " – " + entry.end_date
-          } else { entry.start_date },
-          description: entry.company,
-        )
-        #if entry.description.len() > 0 [
-          #resume-item[
-            #for desc in entry.description [
-              - #desc
+        #block(breakable: false)[
+          #resume-entry(
+            title: entry.role,
+            location: if entry.location != none { entry.location } else { "" },
+            date: if entry.end_date != none {
+              entry.start_date + " – " + entry.end_date
+            } else { entry.start_date },
+            description: entry.company,
+          )
+          #if entry.description.len() > 0 [
+            #resume-item[
+              #for desc in entry.description [
+                - #desc
+              ]
             ]
           ]
         ]
@@ -145,6 +152,32 @@
         )
         #if entry.details.len() > 0 [
           #resume-item[#entry.details.join(" · ")]
+        ]
+      ]
+    ]
+
+    #if projects.len() > 0 [
+      = Projects
+      #for project in projects [
+        #resume-entry(
+          title: project.name,
+          location: "",
+          date: if project.start_date != "" {
+            if project.end_date != none {
+              project.start_date + " – " + project.end_date
+            } else { project.start_date }
+          } else { "" },
+          description: if project.technologies.len() > 0 {
+            project.technologies.join(", ")
+          } else { "" },
+          title-link: project.link,
+        )
+        #if project.description.len() > 0 [
+          #resume-item[
+            #for desc in project.description [
+              - #desc
+            ]
+          ]
         ]
       ]
     ]

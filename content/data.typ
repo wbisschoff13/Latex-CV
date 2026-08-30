@@ -30,12 +30,19 @@
 
 #let _exp_entries = _experience.map(e => {
   let bullets = e.at("bullets", default: ())
+  let yaml_tags = e.at("variant_tags", default: ())
   let desc = (:)
   let tags = ()
   for v in _variants {
     let bv = _bullets_for_variant(bullets, v)
     desc.insert(v, bv)
     if bv.len() > 0 { tags = tags + (v,) }
+  }
+  // Honor explicit variant_tags so a current-job header can print with no bullets.
+  if type(yaml_tags) == array {
+    for t in yaml_tags {
+      if not tags.contains(t) { tags = tags + (t,) }
+    }
   }
   (
     role: e.at("role", default: (general: "")),
@@ -48,13 +55,22 @@
   )
 })
 
-#let _edu_entries = _education.map(e => (
-  degree: e.at("degree", default: ""),
-  institution: e.at("institution", default: ""),
-  location: "",
-  graduation_year: e.at("end_date", default: ""),
-  details: _init_variant_dict(v => ()),
-))
+#let _edu_entries = _education.map(e => {
+  let raw_details = e.at("details", default: (:))
+  (
+    degree: e.at("degree", default: ""),
+    institution: e.at("institution", default: ""),
+    location: e.at("location", default: ""),
+    graduation_year: e.at("end_date", default: ""),
+    details: _init_variant_dict(v => {
+      if type(raw_details) == dictionary {
+        raw_details.at(v, default: ())
+      } else {
+        ()
+      }
+    }),
+  )
+})
 
 #let _skill_cats = _skills.map(c => (
   category: c.at("category", default: ""),
@@ -64,10 +80,28 @@
 
 #let _proj_entries = _projects.map(p => {
   let pd = p.at("description", default: "")
+  let tags = p.at("variant_tags", default: ())
+  let bullets = p.at("bullets", default: (:))
   (
     name: p.at("name", default: ""),
-    description: _init_variant_dict(v => if pd != "" { (pd,) } else { () }),
+    description: _init_variant_dict(v => {
+      let tagged = tags.contains(v)
+      if not tagged { () } else if type(bullets) == dictionary and v in bullets {
+        bullets.at(v)
+      } else if pd != "" { (pd,) } else { () }
+    }),
     link: p.at("url", default: none),
+    technologies: {
+      let t = p.at("technologies", default: ())
+      if type(t) == dictionary {
+        _init_variant_dict(v => t.at(v, default: ()))
+      } else {
+        _init_variant_dict(v => t)
+      }
+    },
+    start_date: p.at("start_date", default: ""),
+    end_date: p.at("end_date", default: none),
+    variant_tags: tags,
   )
 })
 

@@ -1,12 +1,31 @@
 ---
+- id: deviatdd
+  name: "DeviaTDD"
+  description: "MIT-licensed Python CLI (PyPI package deviatdd, CLI deviate) that orchestrates spec-and-test-driven agent loops with human gates and git-enforced verification (Red → Green → Judge/Train → Refactor). Judge is isolated from Green; failed verification rolls git back to the red commit."
+  url: "https://github.com/wernerbisschoff/deviatdd"
+  technologies:
+    - "Python"
+    - "pytest"
+    - "TDD"
+  cv_priority: 1
+  website_show: true
+
 - id: divergent-tabletop-wiki
   name: "Divergent Tabletop Wiki"
   description: "Built a community wiki using Astro, Elixir, and Docker for knowledge management. Documented event frameworks, onboarding processes, and communication best practices. Created tooling for content management and community operations."
   url: null
   technologies:
-    - "Astro"
-    - "Elixir"
-    - "Docker"
+    general:
+      - "Astro"
+      - "Elixir"
+      - "Docker"
+    infrastructure:
+      - "Elixir"
+      - "Docker"
+  start_date: "Jun 2025"
+  end_date: null
+  # Not printed on PDFs: duplicates the Divergent Tabletop experience entry.
+  variant_tags: []
   cv_priority: 1
   website_show: true
 
