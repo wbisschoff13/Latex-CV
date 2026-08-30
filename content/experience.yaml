@@ -10,7 +10,6 @@
   end_date: null
   variant_tags:
     - "general"
-    - "systems"
     - "infrastructure"
   bullets:
     - text: "Built a dedicated outbox for durable webhook delivery."

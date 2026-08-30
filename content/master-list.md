@@ -14,16 +14,16 @@ Each CV variant (general / systems / infrastructure) curates from this document.
 
 ## 1. FiveWest | Cape Town, ZA
 
-- **Role (all variants):** Software Engineer
+- **Role (general / infrastructure):** Software Engineer
 - **Dates:** Aug 2026 – Present
-- **Used in variants:** all three (header required). Systems may print the header with no bullets if the 1-page budget is tight.
+- **Used in variants:** general and infrastructure only. Not on systems yet (header alone overflowed Education).
 
 #### General / Infrastructure bullets
 - Built a dedicated outbox for durable webhook delivery.
 - Bringing in a dedicated AI workflow for spec-and-test-driven development.
 
 #### Systems
-- Header only (Software Engineer, FiveWest, Aug 2026 – Present). The method line overflowed Education onto page 2 and was dropped. Older jobs kept.
+- Omitted. Do not print the FiveWest header or bullets until Werner asks.
 
 ---
 
